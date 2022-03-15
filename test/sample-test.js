@@ -8,7 +8,7 @@ describe("NFTMarketplace", function () {
     await nftMarketplace.deployed();
 
     let listingPrice = await nftMarketplace.getListingPrice()
-    nftMarketplace = listingPrice.toString()
+    listingPrice = listingPrice.toString()
 
     const auctionPrice = ethers.utils.parseUnits('1', 'ether')
 
